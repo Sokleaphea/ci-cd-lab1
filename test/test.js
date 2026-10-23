@@ -12,7 +12,7 @@ describe('GET /', () => {
     });
 });
 describe('GET /', () => {
-    if('returns HTTP 200', async () => {
+    it('returns HTTP 200', async () => {
         const response = await request(app).get('/');
         expect(response.status).to.equal(200);
     });
