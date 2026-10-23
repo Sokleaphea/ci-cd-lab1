@@ -11,3 +11,13 @@ describe('GET /', () => {
         expect(response.text).to.equal('Hello, GitHub Actions!');
     });
 });
+describe('GET /', () => {
+    it('returns HTTP 200', async () => {
+        const response = await request(app).get('/');
+        expect(response.status).to.equal(200);
+    });
+    it('returns the expected message', async () => {
+        const response = await request(app).get('/');
+        expect(response.status).to.equal(200);
+    });
+})
